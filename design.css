@@ -1,0 +1,336 @@
+html{
+    contain: paint;
+}
+
+body,h1,h2,h3,h4{
+    font-family: "Josefin Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+h5{
+    font-family: "Josefin Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 17px;
+}
+
+#navbarNav{
+    justify-content: flex-end;
+    font-size:19px;
+} 
+
+.navbar-hover{
+    color:rgb(0, 0, 0)
+}
+
+.navbar-hover:hover{
+    color:rgb(223, 173, 10)
+}
+
+#navbarStyle{
+    position: sticky;
+    top: 0;
+    z-index: 9999999;
+    background-color: white;
+    /* padding: 0 25px 0; */
+    height: 80px;
+    border-bottom: 1px solid rgb(196, 196, 196);
+}
+
+.navbar-collapse.collapsing,
+.navbar-collapse.show{
+    background-color: #ececec;
+    text-decoration: underline;
+    padding-left: 15px;
+}
+
+#navbar-toggler-margin{
+    margin-right: 15px;
+}
+
+#logo{
+    padding-left: 15px;
+}
+
+.josefin-sans-text-header{
+    font-family: "Lobster", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 40px;
+}
+
+.home-container{
+    width: 100%;
+    height: 750px;
+    color:rgb(255, 255, 255)
+}
+
+.home-container-text{
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+    text-align: center;
+    margin-top: 10%;
+}
+
+.home-icons{
+    font-size: 55px;
+    text-align: center;
+}
+
+.home-icons-divider{
+    display: none;
+}
+
+#home-pic{
+    filter: brightness(50%);
+    width: 100%;
+    height: 100%; 
+}
+
+#contact-book-pic{
+    margin-left: 50px;
+    width: 500px;
+    height: 510px;
+}
+
+
+#whatsapp-btn{
+    font-size: 18px;
+    background-color:rgb(75, 216, 56);
+    border: none;
+    height: 50px;
+    color: white;
+    padding: 14px 25px;
+    margin-top: 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 26px;
+    width: 185px;
+}
+
+#whatsapp-btn:hover{
+    background-color: rgb(48, 240, 0);
+}
+
+#carou-btn{
+    font-size: 18px;
+    background-color:rgb(238, 58, 3);
+    border: none;
+    height: 50px;
+    color: white;
+    padding: 14px 25px;
+    margin-top: 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 26px;
+    width: 180px;
+}
+
+.footer-box{
+    background-color: rgb(8, 8, 8);
+    color: white;
+}
+
+.footer-text{
+    font-size: 15px;
+    margin-top: 10px;
+}
+
+.footer-icons{
+    text-decoration: none;
+    color: white;
+}
+
+.footer-icons:hover{
+    color: rgb(194, 191, 191);
+}
+
+@media only screen and (max-width: 1402px) {
+    #footer-box{
+      height: 100%;
+    }
+}
+
+@media only screen and (max-width: 1200px) {
+    #contact-book-pic{
+        width: 430px;
+        height: 490px;
+        margin-left: 0;
+    }  
+}
+
+@media only screen and (max-width: 992px) {
+    #contact-book-pic{
+        display: none;
+    }
+    #contact-book-resp{
+        text-align: center;
+    }
+    #carou-btn{
+        margin: auto;
+    }
+    #logo{
+        height: 60px;
+    }
+}
+
+div.sticky{
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    background-color: yellow;
+    padding: 50px;
+    font-size: 20px;
+}
+
+@media only screen and (max-width: 768px) {
+    .home-container{
+        height: 400px;
+    }
+    .home-resp-text{
+        font-size: 19px;
+    }
+    .home-icons-container{
+        width: 100%;
+        max-width: 100%;
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .home-icons-divider{
+        display: block;
+    }
+}
+
+@media only screen and (max-width: 575px) {
+    #logo{
+        width: 250px;
+    }
+
+}
+
+@media only screen and (max-width: 482px) {
+    .footer-text{
+        font-size: 12px;
+        margin-top: 10px;
+    }
+    .small-screen-mt-fix{
+        margin-top: -10px !important;
+    }
+}
+
+
+/* ---------------------------------- Browse Bikes --------------------------------------- */
+
+.card-img-top{
+    height: 400px;   
+}
+
+#bikes-header{
+    text-align: center;
+}
+
+.bike-price-text{
+    margin-top: -15px;
+}
+
+.product-card{
+    transition: 0s;
+}
+
+.product-card:hover{
+    -webkit-box-shadow: 6px 6px 13px 0px rgba(102,102,102,0.66);
+    -moz-box-shadow: 6px 6px 13px 0px rgba(102,102,102,0.66);
+    box-shadow: 6px 6px 13px 0px rgba(102,102,102,0.66);
+    transition-duration: 0.2s;
+    transform: scale(1.05)
+}
+
+#bike-card-container{
+    padding-bottom: 15px;
+}
+
+#coming-soon-text{
+    text-align: center;
+    color: #656565;
+}
+
+
+/* ---------------------------------- Contact Us --------------------------------------- */
+
+.footer-box-contact-us{
+    position: fixed;
+    bottom: 0;
+}
+
+.contact-us-text{
+    text-decoration: none;
+    color: black;
+}
+
+.contact-us-text-general{
+    font-size: 17px;
+}
+
+.contact-us-text:hover{
+    color:rgb(223, 173, 10)
+}
+
+.contact-us-spacer{
+    margin-right: 18px;
+}
+
+#contact-us-card-container{
+    border-radius: 18px;
+    height: 350px;
+    -webkit-box-shadow: 7px 6px 17px -8px rgba(0,0,0,0.75);
+    -moz-box-shadow: 7px 6px 17px -8px rgba(0,0,0,0.75);
+    box-shadow: 7px 6px 17px -8px rgba(0,0,0,0.75);
+}
+
+#contact-us-map{
+    width: 90%;
+    height: 450px;
+    border: 0;
+    border-radius: 5px;
+}
+
+@media only screen and (min-width: 768px) {
+    #contact-us-footer{
+        height: 285px;
+    }
+
+    .footer-box{
+        height: 250px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    #contact-us-map-resp{
+        margin-top: 20px;
+    }
+
+    #contact-us-map{
+        width: 100%;
+    }
+
+    #contact-us-card-container{
+        height: 250px;
+    }
+
+    #contact-us-map{
+        height: 330px;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    #contact-us-card-container{
+        font-size: 15px;
+    }
+}
+
